@@ -7,5 +7,11 @@ namespace WebApplication1.Estudiante
 {
     public class ControladoraBD_estudiante
     {
+        Adaptador adaptador = new Adaptador();
+        internal void agregarEstudiante(Entidad_estudiante estudiante)
+        {
+            string consulta = "";
+        }
     }
+}
 }
