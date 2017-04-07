@@ -388,6 +388,8 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cursos\ControladoraBD_curso.cs" />
+    <Compile Include="Cursos\Controladora_cursos.cs" />
     <Compile Include="Cursos\Entidad_Curso.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

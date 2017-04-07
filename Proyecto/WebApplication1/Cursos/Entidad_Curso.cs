@@ -16,13 +16,13 @@ namespace WebApplication1.Cursos
         int activo;
         public Entidad_Curso(object[] atri)
         {
-            this.idcurso = atri[0].ToString;
-            this.nombre = atri[1].ToString;
-            this.descripcion = atri[2].ToString;
-            this.creditos = parseint(atri[3].ToString);
-            this.grupo = parseint(atri[4].ToString);
-            this.profesor = atri[5].ToString;
-            this.activo = parseint(atri[6].ToString);
+            this.idcurso = atri[0].ToString();
+            this.nombre = atri[1].ToString();
+            this.descripcion = atri[2].ToString();
+            this.creditos = int.Parse(atri[3].ToString());
+            this.grupo = int.Parse(atri[4].ToString());
+            this.profesor = atri[5].ToString();
+            this.activo = int.Parse(atri[6].ToString());
         }
         public string Curso
         {
