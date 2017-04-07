@@ -15,9 +15,9 @@ namespace WebApplication1.Estudiante
         String email;
         int id_direccion;
         int activo;
-        String Nombre;
-        String Apellido;
-        String Apellido2;
+        String nombre;
+        String apellido;
+        String apellido2;
         public Entidad_estudiante(object[] atri)
         {
             this.carnet = int.Parse(atri[0].ToString());
@@ -27,9 +27,9 @@ namespace WebApplication1.Estudiante
             this.email = atri[4].ToString();
             this.id_direccion = int.Parse(atri[5].ToString());
             this.activo = int.Parse(atri[6].ToString());
-            this.Nombre = atri[7].ToString();
-            this.Apellido = atri[8].ToString();
-            this.Apellido2 = atri[9].ToString();
+            this.nombre = atri[7].ToString();
+            this.apellido = atri[8].ToString();
+            this.apellido2 = atri[9].ToString();
 
 
         }
@@ -49,7 +49,7 @@ namespace WebApplication1.Estudiante
 
         public int Genero
         {
-            get { return Genero; }
+            get { return genero; }
 
             set { genero = value; }
         }
@@ -67,5 +67,41 @@ namespace WebApplication1.Estudiante
 
             set { email = value; }
         }
+        public int id_direc
+        {
+            get { return id_direccion; }
+
+            set { id_direccion = value; }
+        }
+        public int Activo
+        {
+            get { return activo; }
+
+            set { activo = value; }
+        }
+
+        public string Nombre
+        {
+            get { return nombre; }
+
+            set { nombre = value; }
+
+        }
+
+        public string Apellido
+        {
+            get { return apellido; }
+
+            set { apellido = value; }
+
+        }
+
+        public string Apellido2
+        {
+            get { return apellido2; }
+
+            set { apellido2 = value; }
+        }
     }
 }
+
