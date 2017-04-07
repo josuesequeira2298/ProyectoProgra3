@@ -203,6 +203,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Cursos\Expediente.aspx" />
+    <Content Include="Cursos\verCursos.aspx" />
     <Content Include="Estudiante\Estudiante.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -387,6 +389,23 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\ControladoraBD_curso.cs" />
+    <Compile Include="Cursos\Controladora_cursos.cs" />
+    <Compile Include="Cursos\Entidad_Curso.cs" />
+    <Compile Include="Cursos\Expediente.aspx.cs">
+      <DependentUpon>Expediente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cursos\Expediente.aspx.designer.cs">
+      <DependentUpon>Expediente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos\verCursos.aspx.cs">
+      <DependentUpon>verCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cursos\verCursos.aspx.designer.cs">
+      <DependentUpon>verCursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
