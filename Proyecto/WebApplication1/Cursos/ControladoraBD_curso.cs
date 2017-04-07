@@ -12,6 +12,7 @@ namespace WebApplication1.Cursos
      internal void agregarcurso (Entidad_Curso curso)
         {
             string consulta = "";
+            adaptador.consultar(consulta);
         }
     }
 }

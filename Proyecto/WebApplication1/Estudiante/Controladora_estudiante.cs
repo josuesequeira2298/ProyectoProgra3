@@ -13,6 +13,8 @@ namespace WebApplication1.Estudiante
         internal void insertarDatos(object[] atri)
         {
             Entidad_estudiante estudiante = new Entidad_estudiante(atri);
+
+            controladoraBD.agregarEstudiante(estudiante);
             
         }
     }
