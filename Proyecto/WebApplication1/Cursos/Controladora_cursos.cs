@@ -18,6 +18,8 @@ namespace WebApplication1.Cursos
         {
             Entidad_Curso curso = new Entidad_Curso(atri);
             controladora.buscarCurso(curso);
+
         }
     }
 }
+//

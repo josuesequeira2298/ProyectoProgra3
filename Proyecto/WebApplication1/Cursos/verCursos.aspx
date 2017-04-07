@@ -13,4 +13,4 @@
     </form>
 </body>
 </html>
-<%-- la idea aca es ver cursos de planes de estudio carreras y asi --%>
+<%-- la idea aca es ver cursos de planes de estudio carreras y asi..--%>
