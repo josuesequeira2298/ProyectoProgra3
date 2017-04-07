@@ -12,6 +12,12 @@ namespace WebApplication1.Estudiante
         internal void agregarEstudiante(Entidad_estudiante estudiante)
         {
             string consulta = "";
+            adaptador.insertar(consulta);
+        }
+
+        internal void buscarEstudiante(Entidad_estudiante estudiante)
+        {
+            string consulta = "";
             adaptador.consultar(consulta);
         }
 

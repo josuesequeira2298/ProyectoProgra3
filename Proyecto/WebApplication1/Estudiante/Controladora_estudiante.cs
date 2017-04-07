@@ -17,5 +17,11 @@ namespace WebApplication1.Estudiante
             controladoraBD.agregarEstudiante(estudiante);
             
         }
+        internal void buscarEstudiante(object[] atri)
+        {
+            Entidad_estudiante estudiante = new Entidad_estudiante(atri);
+
+            controladoraBD.buscarEstudiante(estudiante);
+        }
     }
 }

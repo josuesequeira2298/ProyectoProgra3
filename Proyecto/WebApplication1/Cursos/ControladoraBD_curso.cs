@@ -9,7 +9,13 @@ namespace WebApplication1.Cursos
     {
         Adaptador adaptador = new Adaptador();
 
-     internal void agregarcurso (Entidad_Curso curso)
+     internal void agregarCurso (Entidad_Curso curso)
+        {
+            string consulta = "";
+            adaptador.insertar(consulta);
+        }
+
+        internal void buscarCurso(Entidad_Curso curso)
         {
             string consulta = "";
             adaptador.consultar(consulta);
