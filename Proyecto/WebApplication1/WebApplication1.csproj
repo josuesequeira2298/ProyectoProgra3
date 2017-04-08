@@ -423,7 +423,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Direcciones\ControladoraBD_direcciones1.cs" />
     <Compile Include="Direcciones\Controladora_direcciones.cs" />
     <Compile Include="Direcciones\Entidad_canton.cs" />
     <Compile Include="Direcciones\Entidad_distrito.cs" />
