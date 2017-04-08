@@ -14,4 +14,4 @@
     </form>
 </body>
 </html>
-<%-- este despues lo hago es hacer un gridview de todos los cursos que lleva con la nota cuando lo matriculo y si lo paso o no --%>
+<%-- este despues lo hago es hacer un gridview de todos los cursos que lleva con la nota cuando lo matriculo y si lo paso o no--%>
