@@ -9,7 +9,7 @@ namespace WebApplication1.Direcciones
     {
         Adaptador adaptador = new Adaptador();
 
-        internal void agregarDireccion(Entidad persona)
+        internal void agregarDireccion(Entidad_provincia direccion)
         {
             string consulta = "select ";
         }
