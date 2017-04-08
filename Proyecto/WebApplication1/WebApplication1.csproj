@@ -415,6 +415,7 @@
     <Compile Include="Cursos\verCursos.aspx.designer.cs">
       <DependentUpon>verCursos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Direcciones\ControladoraBD_direcciones.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -422,6 +423,11 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Direcciones\ControladoraBD_direcciones1.cs" />
+    <Compile Include="Direcciones\Controladora_direcciones.cs" />
+    <Compile Include="Direcciones\Entidad_canton.cs" />
+    <Compile Include="Direcciones\Entidad_distrito.cs" />
+    <Compile Include="Direcciones\Entidad_provincia.cs" />
     <Compile Include="Estudiante\ControladoraBD_estudiante.cs" />
     <Compile Include="Estudiante\Controladora_estudiante.cs" />
     <Compile Include="Estudiante\Entidad_estudiante.cs" />
