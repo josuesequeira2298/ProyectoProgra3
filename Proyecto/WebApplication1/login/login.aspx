@@ -21,6 +21,7 @@
         <br />
 &nbsp;<asp:Button ID="iniciar" runat="server" OnClick="iniciar_click" Text="Iniciar sesión" />
         &nbsp;
+
         <asp:Button ID="registrarse" runat="server" Text="Registrarse" OnClick="registrarse_click" />
     </form>
 </body>
