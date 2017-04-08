@@ -9,16 +9,24 @@ namespace WebApplication1.Direcciones
     {
         Adaptador adaptador = new Adaptador();
 
-        internal void agregarDireccion(Entidad_provincia direccion)
-        {
-            string consulta = "select ";
-        }
+        
 
-        internal void buscarDireccion()
+        internal void buscarProvincia(Entidad_provincia provincia)
         {
             string consulta = "";
             adaptador.consultar(consulta);
         }
 
+        internal void buscarCanton(Entidad_canton canton,string provincia)
+        {
+            
+            string consulta = ""+ provincia ;
+            adaptador.consultar(consulta);
+        }
+        internal void buscarDistrito(Entidad_distrito distrito, string canton)
+        {
+            string consulta = ""+canton;
+            adaptador.consultar(consulta);
+        }
     }
 }
