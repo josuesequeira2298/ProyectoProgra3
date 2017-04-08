@@ -28,5 +28,9 @@ namespace WebApplication1.Estudiante
 
             controladora.insertarDatos(objeto);
         }
+        protected void cargarEstudiante()
+        {
+
+        }
     }
 }

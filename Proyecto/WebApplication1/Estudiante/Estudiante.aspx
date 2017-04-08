@@ -11,7 +11,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtCedula" runat="server" Width="185px"></asp:TextBox>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-            <asp:Button ID="btnCargar" runat="server" Text="Cargar" />
+            <asp:Button ID="btnCargar" runat="server" Text="Cargar" OnClick="datosEstudiante" />
             </p>
             <p style="margin-left: 40px">
                 &nbsp;
