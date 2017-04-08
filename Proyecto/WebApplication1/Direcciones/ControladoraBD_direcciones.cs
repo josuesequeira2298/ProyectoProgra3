@@ -5,9 +5,14 @@ using System.Web;
 
 namespace WebApplication1.Direcciones
 {
-    public class Direcciones
+    public class ControladoraBD_direcciones
     {
         Adaptador adaptador = new Adaptador();
+
+        internal void agregarDireccion(Entidad persona)
+        {
+            string consulta = "select ";
+        }
 
         internal void buscarDireccion()
         {
