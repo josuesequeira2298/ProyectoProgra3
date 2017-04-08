@@ -51,7 +51,8 @@ namespace WebApplication1.Estudiante
 
         internal void buscarEstudiante(Entidad_estudiante estudiante)
         {
-            string consulta = "select * from estudiante where carnet = 1";
+            string consulta = "select * from estudiante where carnet = ";
+
             adaptador.consultar(consulta);
         }
 
