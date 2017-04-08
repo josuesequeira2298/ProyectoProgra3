@@ -35,6 +35,18 @@ namespace WebApplication1.Estudiante
             SqlParameter apellido2 = new SqlParameter("@apellido2", System.Data.SqlDbType.VarChar, 15);
             apellido2.Value = estudiante.Apellido2;
 
+            comando.Parameters.Add(carnet);
+            comando.Parameters.Add(cedula);
+            comando.Parameters.Add(genero);
+            comando.Parameters.Add(telefono);
+            comando.Parameters.Add(email);
+            comando.Parameters.Add(iddireccion);
+            comando.Parameters.Add(activo);
+            comando.Parameters.Add(nombre);
+            comando.Parameters.Add(apellido);
+            comando.Parameters.Add(apellido2);
+            adaptador.insertar(comando);
+
         }
 
         internal void buscarEstudiante(Entidad_estudiante estudiante)
