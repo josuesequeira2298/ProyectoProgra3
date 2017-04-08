@@ -33,5 +33,18 @@ namespace WebApplication1.Estudiante
 
 
         }
+
+        public void cancelar()
+        {
+            txtNombre.Text = "";
+            txtApellido1.Text = "";
+            txtApellido2.Text = "";
+            txtGenero.Text = "";
+            txtCarnet.Text = "";
+            txtTelefono.Text = "";
+            txtCorreo.Text = "";
+            txtDireccion.Text = "";
+
+        }
     }
 }
