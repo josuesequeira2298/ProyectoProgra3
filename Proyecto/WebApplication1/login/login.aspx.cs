@@ -13,5 +13,15 @@ namespace WebApplication1.login
         {
 
         }
+        controladora_login log = new controladora_login();
+        protected void log_in()
+        {
+            string user;
+            string pass;
+            user = carnet.Text;
+            pass = contraseña.Text;
+            log.buscarlogin(user,pass);
+        }
     }
+
 }
