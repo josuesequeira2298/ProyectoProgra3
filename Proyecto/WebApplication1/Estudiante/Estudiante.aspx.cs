@@ -28,7 +28,7 @@ namespace WebApplication1.Estudiante
             objeto[7] = txtApellido1.Text;
             objeto[8] = txtApellido2.Text;
             objeto[9] = txtDireccion.Text;
-            
+
 
             controladora.insertarDatos(objeto);
         }
@@ -37,7 +37,7 @@ namespace WebApplication1.Estudiante
 
 
         }
-        
+
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
             txtNombre.Text = "";
