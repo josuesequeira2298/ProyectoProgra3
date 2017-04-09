@@ -23,7 +23,15 @@ namespace WebApplication1.login
             user = carnet.Text;
             pass = contraseña.Text;
            dt= log.buscarlogin(user,pass);
-
+        
+            if (dt.Rows.Count>1)
+            {
+                alerta.Text = "bienvenido";
+            }
+            else
+            {
+                alerta.Text = "error";
+            }
         }
     }
 
