@@ -2,19 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <br />
     Carrera:&nbsp;
-<asp:DropDownList ID="DropDownList1" runat="server">
+<asp:DropDownList ID="cmbcarrera" runat="server">
 </asp:DropDownList>
 <br />
 <br />
 Curso:&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="DropDownList2" runat="server">
+<asp:DropDownList ID="cmbcurso" runat="server">
 </asp:DropDownList>
 <br />
 <br />
 Grupo:&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="DropDownList3" runat="server">
+<asp:DropDownList ID="cmbgrupo" runat="server">
 </asp:DropDownList>
 <br />
 <br />
-    <asp:Button ID="btnagregar" runat="server" Text="Matricular" OnClick="btnagregar_Click" />
+    <asp:Button ID="btnmatricular" runat="server" Text="Matricular" OnClick="btnmatricular_Click" />
 </asp:Content>
