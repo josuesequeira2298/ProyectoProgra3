@@ -13,39 +13,39 @@ namespace WebApplication1.Matricula {
     public partial class matricula {
         
         /// <summary>
-        /// DropDownList1 control.
+        /// cmbcarrera control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList cmbcarrera;
         
         /// <summary>
-        /// DropDownList2 control.
+        /// cmbcurso control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList cmbcurso;
         
         /// <summary>
-        /// DropDownList3 control.
+        /// cmbgrupo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.DropDownList cmbgrupo;
         
         /// <summary>
-        /// btnagregar control.
+        /// btnmatricular control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnagregar;
+        protected global::System.Web.UI.WebControls.Button btnmatricular;
     }
 }
