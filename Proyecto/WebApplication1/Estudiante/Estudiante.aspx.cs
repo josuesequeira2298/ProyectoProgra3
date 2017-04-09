@@ -17,14 +17,18 @@ namespace WebApplication1.Estudiante
         protected void datosEstudiante(object sender, EventArgs e)
         {
             Object[] objeto = new Object[8];
-            objeto[0] = txtNombre.Text;
-            objeto[1] = txtApellido1.Text;
-            objeto[2] = txtApellido2.Text;
-            objeto[3] = txtGenero.Text;
-            objeto[4] = txtCarnet.Text;
-            objeto[5] = txtTelefono.Text;
-            objeto[6] = txtCorreo.Text;
-            objeto[7] = txtDireccion.Text;
+
+            objeto[0] = txtCarnet.Text;
+            objeto[1] = txtCedula.Text;
+            objeto[2] = txtGenero.Text;
+            objeto[3] = txtTelefono.Text;
+            objeto[4] = txtCorreo.Text;
+            objeto[5] = 1;
+            objeto[6] = txtNombre.Text;
+            objeto[7] = txtApellido1.Text;
+            objeto[8] = txtApellido2.Text;
+            objeto[9] = txtDireccion.Text;
+            
 
             controladora.insertarDatos(objeto);
         }

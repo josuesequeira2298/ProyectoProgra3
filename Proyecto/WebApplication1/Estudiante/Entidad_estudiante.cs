@@ -15,7 +15,7 @@ namespace WebApplication1.Estudiante
         String email;
         int activo;
         String nombre;
-        String apellido;
+        String apellido1;
         String apellido2;
         string password;
         public Entidad_estudiante(object[] atri)
@@ -27,7 +27,7 @@ namespace WebApplication1.Estudiante
             this.email = atri[4].ToString();    
             this.activo = int.Parse(atri[5].ToString());
             this.nombre = atri[6].ToString();
-            this.apellido = atri[7].ToString();
+            this.apellido1 = atri[7].ToString();
             this.apellido2 = atri[8].ToString();
             this.password= atri[9].ToString();
 
@@ -87,11 +87,11 @@ namespace WebApplication1.Estudiante
 
         }
 
-        public string Apellido
+        public string Apellido1
         {
-            get { return apellido; }
+            get { return apellido1; }
 
-            set { apellido = value; }
+            set { apellido1 = value; }
 
         }
 
