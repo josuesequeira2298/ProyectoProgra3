@@ -66,7 +66,7 @@ namespace WebApplication1.Estudiante
 
             set { email = value; }
         }
-        public int Pass
+        public string Pass
         {
             get { return password; }
 

@@ -27,7 +27,7 @@ namespace WebApplication1.Estudiante
             SqlParameter nombre = new SqlParameter("@nombre", System.Data.SqlDbType.VarChar, 20);
             nombre.Value = estudiante.Nombre;
             SqlParameter apellido = new SqlParameter("@apellido", System.Data.SqlDbType.VarChar, 15);
-            apellido.Value = estudiante.Apellido;
+            apellido.Value = estudiante.Apellido1;
             SqlParameter apellido2 = new SqlParameter("@apellido2", System.Data.SqlDbType.VarChar, 15);
             apellido2.Value = estudiante.Apellido2;
 
