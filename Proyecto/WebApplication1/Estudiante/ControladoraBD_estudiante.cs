@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -44,11 +45,13 @@ namespace WebApplication1.Estudiante
 
         }
 
-        internal void buscarEstudiante(Entidad_estudiante estudiante)
+        internal DataTable buscarEstudiante(Entidad_estudiante estudiante)
         {
+            DataTable dt = new DataTable();
             string consulta = "select * from estudiante where carnet = ";
 
-            adaptador.consultar(consulta);
+            dt=adaptador.consultar(consulta);
+            return dt;
         }
 
     }
