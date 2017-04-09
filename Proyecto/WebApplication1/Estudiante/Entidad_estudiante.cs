@@ -13,24 +13,23 @@ namespace WebApplication1.Estudiante
         int genero;
         int telefono;
         String email;
-        int id_direccion;
         int activo;
         String nombre;
         String apellido;
         String apellido2;
+        string password;
         public Entidad_estudiante(object[] atri)
         {
             this.carnet = int.Parse(atri[0].ToString());
             this.cedula = int.Parse(atri[1].ToString());
             this.genero = int.Parse(atri[2].ToString());
             this.telefono = int.Parse(atri[3].ToString());
-            this.email = atri[4].ToString();
-            this.id_direccion = int.Parse(atri[5].ToString());
-            this.activo = int.Parse(atri[6].ToString());
-            this.nombre = atri[7].ToString();
-            this.apellido = atri[8].ToString();
-            this.apellido2 = atri[9].ToString();
-
+            this.email = atri[4].ToString();    
+            this.activo = int.Parse(atri[5].ToString());
+            this.nombre = atri[6].ToString();
+            this.apellido = atri[7].ToString();
+            this.apellido2 = atri[8].ToString();
+            this.password= atri[9].ToString();
 
         }
         public int Carnet
@@ -67,11 +66,11 @@ namespace WebApplication1.Estudiante
 
             set { email = value; }
         }
-        public int id_direc
+        public int Pass
         {
-            get { return id_direccion; }
+            get { return password; }
 
-            set { id_direccion = value; }
+            set { password = value; }
         }
         public int Activo
         {
