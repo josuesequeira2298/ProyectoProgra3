@@ -16,7 +16,7 @@ namespace WebApplication1.Estudiante
         }
         protected void datosEstudiante(object sender, EventArgs e)
         {
-            Object[] objeto = new Object[8];
+            Object[] objeto = new Object[10];
 
             objeto[0] = txtCarnet.Text;
             objeto[1] = txtCedula.Text;
@@ -27,8 +27,8 @@ namespace WebApplication1.Estudiante
             objeto[6] = txtNombre.Text;
             objeto[7] = txtApellido1.Text;
             objeto[8] = txtApellido2.Text;
-            objeto[9] = txtDireccion.Text;
-
+            objeto[9] = txtPassword.Text;
+            
 
             controladora.insertarDatos(objeto);
         }
@@ -37,7 +37,7 @@ namespace WebApplication1.Estudiante
 
 
         }
-
+        
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
             txtNombre.Text = "";
@@ -47,7 +47,7 @@ namespace WebApplication1.Estudiante
             txtCarnet.Text = "";
             txtTelefono.Text = "";
             txtCorreo.Text = "";
-            txtDireccion.Text = "";
+            txtPassword.Text = "";
 
         }
     }
