@@ -9,6 +9,7 @@
     Bienvenido a la Universidad de las Antillas, una de las más prestigiosas universidades en Costa Rica. <o:p></o:p>
 </p>
 <p class="MsoNormal">
+
     <o:p></o:p>
 </p>
 <p class="MsoNormal">
