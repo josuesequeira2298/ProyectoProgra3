@@ -19,9 +19,9 @@
    
         <br />
         <br />
- <asp:Button ID="iniciar" runat="server" OnClick="iniciar_click" Text="Iniciar sesión" />
+ <asp:Button ID="iniciar" runat="server" Text="Iniciar sesión" />
          
-        <asp:Button ID="registrarse" runat="server" Text="Registrarse" OnClick="registrarse_click" />
+        <asp:Button ID="registrarse" runat="server" Text="Registrarse"/>
     </form>
 </body>
 </html>
