@@ -33,7 +33,7 @@ namespace WebApplication1.Estudiante
             SqlParameter apellido2 = new SqlParameter("@apellido2", System.Data.SqlDbType.VarChar, 15);
             apellido2.Value = estudiante.Apellido2;
             SqlParameter password = new SqlParameter("@password", System.Data.SqlDbType.VarChar,30);
-            iddireccion.Value = estudiante.id_direc;
+            password.Value = estudiante.Pass;
 
             comando.Parameters.Add(carnet);
             comando.Parameters.Add(cedula);
@@ -51,7 +51,7 @@ namespace WebApplication1.Estudiante
 
         internal void buscarEstudiante(Entidad_estudiante estudiante)
         {
-            string consulta = "select * from estudiante where carnet = ";
+            string consulta = "select * from estudiante where carnet = "+estudiante.Carnet;
 
             adaptador.consultar(consulta);
         }
