@@ -13,7 +13,7 @@ namespace WebApplication1
         // C#
         public void conectar()
         {
-            String conexion = "Server=tcp:progra3.database.windows.net,1433;Initial Catalog=Progra3;Persist Security Info=False;User ID=progra3;Password=progra,3;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+            String conexion = "Server=tcp:progra3.database.windows.net,1433;Initial Catalog=Progra3;Persist Security Info=False;User ID=progra3;Password=progra.3;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
 
             conn = new SqlConnection(conexion);
 

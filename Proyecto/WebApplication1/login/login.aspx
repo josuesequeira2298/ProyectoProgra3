@@ -19,10 +19,10 @@
    
         <br />
         <br />
- <asp:Button ID="iniciar" runat="server" Text="Iniciar sesión" />
+ <asp:Button ID="iniciar" runat="server" Text="Iniciar sesión" OnClick="iniciar_Click"  />
          
         <asp:Button ID="registrarse" runat="server" Text="Registrarse"/>
     </form>
-    <asp:Label ID="alerta" runat="server" Text=""></asp:Label>
+    <asp:Label ID="alerta" runat="server" Text="1"></asp:Label>
 </body>
 </html>

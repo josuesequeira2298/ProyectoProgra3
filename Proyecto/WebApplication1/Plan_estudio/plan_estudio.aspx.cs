@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1.Plan_estudio
 {
-    public partial class plan_estudio : System.Web.UI.Page
+    public partial class Plan_estudio : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
