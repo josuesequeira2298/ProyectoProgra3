@@ -13,19 +13,19 @@ namespace WebApplication1.Direcciones
 
         internal void buscarProvincia(Entidad_provincia provincia)
         {
-            string consulta = "";
+            string consulta = " ";
             adaptador.consultar(consulta);
         }
 
         internal void buscarCanton(Entidad_canton canton,string provincia)
         {
             
-            string consulta = ""+ provincia ;
+            string consulta = " " + provincia ;
             adaptador.consultar(consulta);
         }
         internal void buscarDistrito(Entidad_distrito distrito, string canton)
         {
-            string consulta = ""+canton;
+            string consulta = " " + canton;
             adaptador.consultar(consulta);
         }
     }
