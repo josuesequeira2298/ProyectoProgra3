@@ -15,22 +15,35 @@ namespace WebApplication1.login
 
         }
         controladora_login log = new controladora_login();
-        protected void log_in()
+
+
+        public void log_in()
+        {
+
+        }
+
+        protected void iniciar_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
             string user;
             string pass;
             user = carnet.Text;
             pass = contraseña.Text;
-           dt= log.buscarlogin(user,pass);
-        
-            if (dt.Rows.Count>1)
+            dt = log.buscarlogin(user, pass);
+            if (dt == null)
             {
-                alerta.Text = "bienvenido";
+                alerta.Text = "error de conexion";
             }
             else
             {
-                alerta.Text = "error";
+                if (dt.Rows.Count > 1)
+                {
+                    alerta.Text = "bienvenido";
+                }
+                else
+                {
+                    alerta.Text = "error";
+                }
             }
         }
     }
