@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -8,12 +9,14 @@ namespace WebApplication1.login
     public class ControladoraBD_login
     {
         Adaptador adaptador = new Adaptador();
-       
 
-        internal void buscarusuario(string user,string pass)
+
+        internal DataTable buscarusuario(string user, string pass)
         {
-            string consulta = "Select * from Estudiante where carnet="+user+"and password="+pass;
-            adaptador.consultar(consulta);
+            DataTable dt = new DataTable();
+            string consulta = "Select * from Estudiante where carnet =" +user+ "and contraseña =" +pass;
+           dt= adaptador.consultar(consulta);
+            return dt;
         }
     }
 }
