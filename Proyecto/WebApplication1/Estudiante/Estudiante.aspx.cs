@@ -16,15 +16,15 @@ namespace WebApplication1.Estudiante
         }
         protected void datosEstudiante(object sender, EventArgs e)
         {
-            Object[] objeto = new Object[4];
+            Object[] objeto = new Object[8];
             objeto[0] = txtNombre.Text;
             objeto[1] = txtApellido1.Text;
             objeto[2] = txtApellido2.Text;
             objeto[3] = txtGenero.Text;
             objeto[4] = txtCarnet.Text;
-            objeto[4] = txtTelefono.Text;
-            objeto[4] = txtCorreo.Text;
-            objeto[4] = txtDireccion.Text;
+            objeto[5] = txtTelefono.Text;
+            objeto[6] = txtCorreo.Text;
+            objeto[7] = txtDireccion.Text;
 
             controladora.insertarDatos(objeto);
         }
@@ -33,8 +33,8 @@ namespace WebApplication1.Estudiante
 
 
         }
-
-        public void cancelar()
+        
+        protected void btnCancelar_Click(object sender, EventArgs e)
         {
             txtNombre.Text = "";
             txtApellido1.Text = "";

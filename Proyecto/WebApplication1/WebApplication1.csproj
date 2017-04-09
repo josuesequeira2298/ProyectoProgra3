@@ -454,9 +454,6 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login\ControladoraBD_login.cs" />
-    <Compile Include="login\Controladora_login.cs" />
-    <Compile Include="login\Entidad_login.cs" />
     <Compile Include="login\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

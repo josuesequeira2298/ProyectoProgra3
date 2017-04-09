@@ -12,10 +12,8 @@ namespace WebApplication1.Estudiante
         Adaptador adaptador = new Adaptador();
         internal void agregarEstudiante(Entidad_estudiante estudiante)
         {
-            string consulta = "";
+            string consulta = "INSERT INTO [dbo].[Estudiante] ([cedula],[genero],[telefono],[email],[Activo],[Nombre],[Apellido1],[Apellido2])VALUES(@cedula, @genero, @telefono, @email, @activo, @nombre, @apellido1, @apellido2)";
             SqlCommand comando = new SqlCommand(consulta);
-            SqlParameter carnet = new SqlParameter("@carnet", System.Data.SqlDbType.Int);
-            carnet.Value = estudiante.Carnet;
             SqlParameter cedula = new SqlParameter("@cedula", System.Data.SqlDbType.Int);
             cedula.Value = estudiante.Cedula;
             SqlParameter genero = new SqlParameter("@genero", System.Data.SqlDbType.Bit);
@@ -24,8 +22,6 @@ namespace WebApplication1.Estudiante
             telefono.Value = estudiante.Telefono;
             SqlParameter email = new SqlParameter("@email", System.Data.SqlDbType.VarChar, 30);
             email.Value = estudiante.Email;
-            SqlParameter iddireccion = new SqlParameter("@iddireccion",System.Data.SqlDbType.SmallInt);
-            iddireccion.Value = estudiante.id_direc;
             SqlParameter activo = new SqlParameter("@activo",System.Data.SqlDbType.Bit);
             activo.Value = estudiante.Activo;
             SqlParameter nombre = new SqlParameter("@nombre", System.Data.SqlDbType.VarChar, 20);
@@ -35,12 +31,11 @@ namespace WebApplication1.Estudiante
             SqlParameter apellido2 = new SqlParameter("@apellido2", System.Data.SqlDbType.VarChar, 15);
             apellido2.Value = estudiante.Apellido2;
 
-            comando.Parameters.Add(carnet);
+            
             comando.Parameters.Add(cedula);
             comando.Parameters.Add(genero);
             comando.Parameters.Add(telefono);
             comando.Parameters.Add(email);
-            comando.Parameters.Add(iddireccion);
             comando.Parameters.Add(activo);
             comando.Parameters.Add(nombre);
             comando.Parameters.Add(apellido);
