@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -18,11 +19,13 @@ namespace WebApplication1.Estudiante
             controladoraBD.agregarEstudiante(estudiante);
             
         }
-        internal void buscarEstudiante(object[] atri)
+        internal DataTable buscarEstudiante(object[] atri)
         {
+            DataTable dt = new DataTable();
             Entidad_estudiante estudiante = new Entidad_estudiante(atri);
 
-            controladoraBD.buscarEstudiante(estudiante);
+            dt=controladoraBD.buscarEstudiante(estudiante);
+            return dt;
         }
     }
 }

@@ -45,6 +45,7 @@ namespace WebApplication1.login
                     alerta.Text = "error";
                 }
             }
+            //Response.Redirect("Estudiante.aspx");
         }
     }
 
