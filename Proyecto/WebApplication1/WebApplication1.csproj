@@ -224,6 +224,7 @@
     <Content Include="images\Ing Sof.JPG" />
     <Content Include="Index.aspx" />
     <Content Include="login\login.aspx" />
+    <Content Include="Matricula\matricula.aspx" />
     <Content Include="Plan_estudio\Plan_estudio.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -462,6 +463,16 @@
     </Compile>
     <Compile Include="login\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Matricula\ControladoraBD_matricula.cs" />
+    <Compile Include="Matricula\Controladora_matricula.cs" />
+    <Compile Include="Matricula\Entidad_matricula.cs" />
+    <Compile Include="Matricula\matricula.aspx.cs">
+      <DependentUpon>matricula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Matricula\matricula.aspx.designer.cs">
+      <DependentUpon>matricula.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Plan_estudio\Controladora_Plan.cs" />

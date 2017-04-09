@@ -36,7 +36,7 @@ namespace WebApplication1.login
             }
             else
             {
-                if (dt.Rows.Count > 1)
+                if (dt.Rows.Count > 0)
                 {
                     alerta.Text = "bienvenido";
                 }
