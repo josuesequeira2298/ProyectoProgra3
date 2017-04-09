@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,11 +17,13 @@ namespace WebApplication1.login
         controladora_login log = new controladora_login();
         protected void log_in()
         {
+            DataTable dt = new DataTable();
             string user;
             string pass;
             user = carnet.Text;
             pass = contraseña.Text;
-            log.buscarlogin(user,pass);
+           dt= log.buscarlogin(user,pass);
+
         }
     }
 

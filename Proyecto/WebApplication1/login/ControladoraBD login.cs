@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -10,10 +11,12 @@ namespace WebApplication1.login
         Adaptador adaptador = new Adaptador();
 
 
-        internal void buscarusuario(string user, string pass)
+        internal DataTable buscarusuario(string user, string pass)
         {
+            DataTable dt = new DataTable();
             string consulta = "Select * from Estudiante where carnet=" + user + "and password=" + pass;
-            adaptador.consultar(consulta);
+           dt= adaptador.consultar(consulta);
+            return dt;
         }
     }
 }
