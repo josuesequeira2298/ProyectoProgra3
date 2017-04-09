@@ -224,7 +224,7 @@
     <Content Include="images\Ing Sof.JPG" />
     <Content Include="Index.aspx" />
     <Content Include="login\login.aspx" />
-    <Content Include="Plan_estudio\plan_estudio.aspx" />
+    <Content Include="Plan_estudio\Plan_estudio.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -465,12 +465,12 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Plan_estudio\Controladora_Plan.cs" />
-    <Compile Include="Plan_estudio\plan_estudio.aspx.cs">
-      <DependentUpon>plan_estudio.aspx</DependentUpon>
+    <Compile Include="Plan_estudio\Plan_estudio.aspx.cs">
+      <DependentUpon>Plan_estudio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Plan_estudio\plan_estudio.aspx.designer.cs">
-      <DependentUpon>plan_estudio.aspx</DependentUpon>
+    <Compile Include="Plan_estudio\Plan_estudio.aspx.designer.cs">
+      <DependentUpon>Plan_estudio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
