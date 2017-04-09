@@ -48,6 +48,7 @@ namespace WebApplication1.Estudiante
             txtTelefono.Text = "";
             txtCorreo.Text = "";
             txtPassword.Text = "";
+            txtCedula.Text = "";
 
         }
     }
