@@ -83,7 +83,7 @@
                         <li><a runat="server" href="Matricula/matricula.aspx">Matricula</a></li>
 
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <asp:LoginView runat="server" ViewStateMode="Enabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="Estudiante/Estudiante.aspx">Registrarse</a></li>
