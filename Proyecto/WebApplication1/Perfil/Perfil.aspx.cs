@@ -13,12 +13,14 @@ namespace WebApplication1.Perfil
 Estudiante.Controladora_estudiante controladora = new Estudiante.Controladora_estudiante();
         DataTable dt = new DataTable();
         DataTable dt1 = new DataTable();
+        DataTable dt2 = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["user"]!=null) {
                 string user = Session["user"].ToString();
                 dt = controladora.buscarEstudiante(user);
                 dt1 = controladora.buscarDir(user);
+                dt2= controladora.buscarCarreras(user);
                 lbcarnet.Text = dt.Rows[0][0].ToString();
                 lbcedula.Text = dt.Rows[0][1].ToString();
                 if (dt.Rows[0][2].ToString() == "True")
@@ -35,6 +37,11 @@ Estudiante.Controladora_estudiante controladora = new Estudiante.Controladora_es
                 lbnombre.Text = dt.Rows[0][6].ToString();
                 lbapellido1.Text = dt.Rows[0][7].ToString();
                 lbapellido2.Text = dt.Rows[0][8].ToString();
+
+                dgvCarrera.DataSource = dt2;
+                dgvCarrera.DataBind();
+                
+                
                 
                 lbdireccion.Text = dt1.Rows[0][4].ToString()+", "+ dt1.Rows[0][3].ToString() + ", " + dt1.Rows[0][2].ToString() + ", " + dt1.Rows[0][1].ToString() ;
             }
@@ -44,6 +51,10 @@ Estudiante.Controladora_estudiante controladora = new Estudiante.Controladora_es
                 lbcarnet.Text = "sesion es null";
             }
         }
-  
+
+        protected void dgvCarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

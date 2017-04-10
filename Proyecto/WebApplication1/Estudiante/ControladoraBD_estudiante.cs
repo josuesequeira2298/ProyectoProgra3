@@ -66,6 +66,14 @@ namespace WebApplication1.Estudiante
             dt = adaptador.consultar(consulta);
             return dt;
         }
+        internal DataTable buscarCarreras(string carnet)
+        {
+            DataTable dt = new DataTable();
+            string consulta = "select ca.nombre as Carreras from Carrera_por_estudiante cpe join carrera ca on ca.id_carrera=cpe.Id_carrera where Carnet =" + carnet;
+
+            dt = adaptador.consultar(consulta);
+            return dt;
+        }
     }
 
 }

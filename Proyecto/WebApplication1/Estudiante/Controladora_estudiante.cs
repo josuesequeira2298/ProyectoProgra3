@@ -37,5 +37,14 @@ namespace WebApplication1.Estudiante
             return dt;
         }
 
+        internal DataTable buscarCarreras(string carnet)
+        {
+            DataTable dt = new DataTable();
+
+
+            dt = controladoraBD.buscarCarreras(carnet);
+            return dt;
+        }
+
     }
 }
