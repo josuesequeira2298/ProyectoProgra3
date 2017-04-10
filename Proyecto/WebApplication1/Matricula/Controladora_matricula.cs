@@ -5,11 +5,15 @@ using System.Web;
 
 namespace WebApplication1.Matricula
 {
+    
     public class Controladora_matricula
     {
-        internal void insertarDatos(object[] objeto)
+        ControladoraBD_matricula controladoraBD = new ControladoraBD_matricula();
+        internal void insertarDatos(object[] atri)
         {
-            throw new NotImplementedException();
+            Entidad_matricula matricula = new Entidad_matricula(atri);
+
+            controladoraBD.agregarmatricula(matricula);
         }
     }
 
