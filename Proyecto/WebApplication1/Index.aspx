@@ -7,6 +7,7 @@
     &nbsp;</p>
 <p class="MsoNormal">
 
+
     <div class="jumbotron">
     Bienvenido a la Universidad de las Antillas, una de las más prestigiosas universidades en Costa Rica. <o:p></o:p>
     </div>
