@@ -23,7 +23,7 @@ namespace WebApplication1.login
         }
 
         protected void iniciar_Click(object sender, EventArgs e)
-        {
+       {
             DataTable dt = new DataTable();
             string user;
             string pass;
@@ -39,14 +39,16 @@ namespace WebApplication1.login
                 if (dt.Rows.Count > 0)
                 {
                     alerta.Text = "bienvenido";
+                    Response.Redirect("Estudiante/Estudiante.aspx");
                 }
                 else
                 {
-                    alerta.Text = "error";
+                    alerta.Text = "Carnet o contraseña invalida";
                 }
             }
-            //Response.Redirect("Estudiante.aspx");
+            
         }
+       
     }
 
 }

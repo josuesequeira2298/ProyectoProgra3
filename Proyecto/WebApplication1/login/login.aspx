@@ -23,6 +23,7 @@
          
         <asp:Button ID="registrarse" runat="server" Text="Registrarse"/>
     </form>
-    <asp:Label ID="alerta" runat="server" Text="1"></asp:Label>
+    <asp:Label  ID="alerta" runat="server" Text="1"></asp:Label>
+  
 </body>
 </html>
