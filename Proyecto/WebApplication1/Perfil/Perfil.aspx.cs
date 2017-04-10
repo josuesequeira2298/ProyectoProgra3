@@ -19,10 +19,26 @@ Estudiante.Controladora_estudiante controladora = new Estudiante.Controladora_es
                 dt = controladora.buscarEstudiante(user);
                 lbcarnet.Text = dt.Rows[0][1].ToString();
                 lbcedula.Text = dt.Rows[0][1].ToString();
+                if (dt.Rows[0][2].ToString() == "1")
+                {
+                    lbgenero.Text = "Masculino";
+                }
+                else
+                {
+                    lbgenero.Text = "Femenino";
+                }
+
+                lbtelefono.Text = dt.Rows[0][3].ToString();
+                lbcorreo.Text = dt.Rows[0][4].ToString();
+                lbnombre.Text = dt.Rows[0][6].ToString();
+                lbapellido1.Text = dt.Rows[0][7].ToString();
+                lbapellido2.Text = dt.Rows[0][8].ToString();
+                lbdireccion.Text = user;
             }
             else
             {
-                lbcarnet.Text = "sesion null";
+               
+                lbcarnet.Text = "sesion es null";
             }
         }
   
