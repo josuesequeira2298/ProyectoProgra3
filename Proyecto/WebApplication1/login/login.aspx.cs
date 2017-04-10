@@ -44,7 +44,7 @@ namespace WebApplication1.login
                 if (dt.Rows.Count > 0)
                 {
                     alerta.Text = "bienvenido";
-                    Response.Redirect("~/Default.aspx");
+                    Response.Redirect("~/Perfil/Perfil.aspx");
                    Session["user"] = user;
                 }
                 else

@@ -9,13 +9,13 @@
 <br />
     <asp:Label ID="Label2" runat="server" Font-Size="13pt" Text="Cursos:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbcurso" runat="server">
+<asp:DropDownList ID="cmbcurso" runat="server" OnSelectedIndexChanged="cmbcurso_SelectedIndexChanged">
 </asp:DropDownList>
 &nbsp;<br />
 <br />
     <asp:Label ID="Label3" runat="server" Font-Size="13pt" Text="Grupo:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbgrupo" runat="server">
+<asp:DropDownList ID="cmbgrupo" runat="server" OnSelectedIndexChanged="cmbgrupo_SelectedIndexChanged">
 </asp:DropDownList>
 <br />
 <br />
