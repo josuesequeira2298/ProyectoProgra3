@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,6 +13,8 @@ namespace WebApplication1.login
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            
 
         }
         controladora_login log = new controladora_login();
@@ -30,6 +33,8 @@ namespace WebApplication1.login
             user = carnet.Text;
             pass = contraseña.Text;
             dt = log.buscarlogin(user, pass);
+            
+           
             if (dt == null)
             {
                 alerta.Text = "error de conexion";
@@ -39,7 +44,8 @@ namespace WebApplication1.login
                 if (dt.Rows.Count > 0)
                 {
                     alerta.Text = "bienvenido";
-                    Response.Redirect("Estudiante/Estudiante.aspx");
+                    Response.Redirect("~/Default.aspx");
+                   Session["user"] = user;
                 }
                 else
                 {
