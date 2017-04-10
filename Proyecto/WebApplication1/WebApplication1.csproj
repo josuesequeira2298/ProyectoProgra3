@@ -482,6 +482,7 @@
     <Compile Include="Perfil\Perfil.aspx.designer.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Plan_estudio\controladoraBD plan.cs" />
     <Compile Include="Plan_estudio\Controladora_Plan.cs" />
     <Compile Include="Plan_estudio\Plan_estudio.aspx.cs">
       <DependentUpon>Plan_estudio.aspx</DependentUpon>
