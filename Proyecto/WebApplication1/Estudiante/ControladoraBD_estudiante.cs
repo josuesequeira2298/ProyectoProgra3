@@ -9,7 +9,7 @@ namespace WebApplication1.Estudiante
 {
     public class ControladoraBD_estudiante
     {
-        
+
         Adaptador adaptador = new Adaptador();
         internal void agregarEstudiante(Entidad_estudiante estudiante)
         {
@@ -23,7 +23,7 @@ namespace WebApplication1.Estudiante
             telefono.Value = estudiante.Telefono;
             SqlParameter email = new SqlParameter("@email", System.Data.SqlDbType.VarChar, 30);
             email.Value = estudiante.Email;
-            SqlParameter activo = new SqlParameter("@activo",System.Data.SqlDbType.Bit);
+            SqlParameter activo = new SqlParameter("@activo", System.Data.SqlDbType.Bit);
             activo.Value = estudiante.Activo;
             SqlParameter nombre = new SqlParameter("@nombre", System.Data.SqlDbType.VarChar, 20);
             nombre.Value = estudiante.Nombre;
@@ -32,7 +32,7 @@ namespace WebApplication1.Estudiante
             SqlParameter apellido2 = new SqlParameter("@apellido2", System.Data.SqlDbType.VarChar, 15);
             apellido2.Value = estudiante.Apellido2;
 
-            
+
             comando.Parameters.Add(cedula);
             comando.Parameters.Add(genero);
             comando.Parameters.Add(telefono);
@@ -48,11 +48,20 @@ namespace WebApplication1.Estudiante
         internal DataTable buscarEstudiante(string carnet)
         {
             DataTable dt = new DataTable();
-            string consulta = "select * from estudiante where carnet = "+carnet;
+            string consulta = "select * from estudiante where carnet = " + carnet;
 
-            dt=adaptador.consultar(consulta);
+            dt = adaptador.consultar(consulta);
             return dt;
         }
+        internal DataTable buscarDir(string carnet)
+        {
+            DataTable dt = new DataTable();
+            string consulta = "select * from Direccion where Carnet =  " + carnet;
 
+            dt = adaptador.consultar(consulta);
+            return dt;
+        }
     }
+
 }
+
