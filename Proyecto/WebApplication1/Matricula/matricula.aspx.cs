@@ -25,5 +25,14 @@ namespace WebApplication1.Matricula
 
             controladora.insertarDatos(objeto);
         }
+
+        protected void cmbcarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+cmbcurso.DataSource = controladora.insertarDatos();
+                ddlCustomers.DataTextField = "Name";
+                ddlCustomers.DataValueField = "CustomerId";
+                ddlCustomers.DataBind();
+        }
     }
 }
+

@@ -3,7 +3,7 @@
     <br />
     <asp:Label ID="Label1" runat="server" Font-Size="13pt" Text="Carrera:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbcarrera" runat="server">
+<asp:DropDownList ID="cmbcarrera" runat="server" OnSelectedIndexChanged="cmbcarrera_SelectedIndexChanged">
 </asp:DropDownList>
 <br />
 <br />
