@@ -14,7 +14,7 @@ namespace WebApplication1.login
         internal DataTable buscarusuario(string user, string pass)
         {
             DataTable dt = new DataTable();
-            string consulta = "Select * from Estudiante where carnet = " + user.ToString() + " and contraseña = " + pass.ToString(); 
+            string consulta = "Select * from Estudiante where carnet = " + user.ToString() + " and contraseña = '" + pass.ToString()+"'"; 
            dt= adaptador.consultar(consulta);
            
             return dt;

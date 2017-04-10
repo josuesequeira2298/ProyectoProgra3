@@ -13,7 +13,7 @@ namespace WebApplication1.Estudiante
         Adaptador adaptador = new Adaptador();
         internal void agregarEstudiante(Entidad_estudiante estudiante)
         {
-            string consulta = "INSERT INTO [dbo].[Estudiante] ([cedula],[genero],[telefono],[email],[Activo],[Nombre],[Apellido1],[Apellido2])VALUES(@cedula, @genero, @telefono, @email, @activo, @nombre, @apellido1, @apellido2)";
+            string consulta = "INSERT INTO [dbo].[Estudiante]([Carnet],[cedula],[genero],[telefono],[email],[Activo],[Nombre],[Apellido1],[Apellido2],[contraseña])VALUES(@carnet,@cedula, @genero, @telefono, @email, @activo, @nombre, @apellido1, @apellido2, @pass)";
             SqlCommand comando = new SqlCommand(consulta);
             SqlParameter cedula = new SqlParameter("@cedula", System.Data.SqlDbType.Int);
             cedula.Value = estudiante.Cedula;
@@ -31,7 +31,10 @@ namespace WebApplication1.Estudiante
             apellido.Value = estudiante.Apellido1;
             SqlParameter apellido2 = new SqlParameter("@apellido2", System.Data.SqlDbType.VarChar, 15);
             apellido2.Value = estudiante.Apellido2;
-
+            SqlParameter carnet = new SqlParameter("@carnet", System.Data.SqlDbType.Int);
+            carnet.Value = estudiante.Carnet;
+            SqlParameter pass = new SqlParameter("@pass", System.Data.SqlDbType.VarChar,30);
+            pass.Value = estudiante.Pass;
 
             comando.Parameters.Add(cedula);
             comando.Parameters.Add(genero);
@@ -41,6 +44,8 @@ namespace WebApplication1.Estudiante
             comando.Parameters.Add(nombre);
             comando.Parameters.Add(apellido);
             comando.Parameters.Add(apellido2);
+            comando.Parameters.Add(carnet);
+            comando.Parameters.Add(pass);
             adaptador.insertar(comando);
 
         }
