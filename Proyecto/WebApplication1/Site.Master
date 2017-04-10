@@ -27,11 +27,11 @@
         appInsights.trackPageView();
     </script>
     <script lang="JavaScript">
-
-        if (session["user"] == "") {
+        var session;
+        if (Session["user"] == "") {
 
         } else {
-            txtNumCarnet.value = "carnet" + session["user"].tostring();
+            label_numCarnet = "carnet" + session["user"].tostring();
         }
 
     </script>
@@ -82,7 +82,7 @@
                                 <li><a runat="server" href="Estudiante/Estudiante.aspx">Registrarse</a></li>
                                 <li><a runat="server" href="login/login.aspx">Log in</a></li>
                                 <li>
-                                    <input type="text" id="txtNumCarnet" value="#carnet" /></li>
+                                    <label id="label_numCarnet"></label></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
