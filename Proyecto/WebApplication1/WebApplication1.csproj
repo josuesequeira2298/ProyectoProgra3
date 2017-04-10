@@ -224,7 +224,7 @@
     <Content Include="images\Ing Sof.JPG" />
     <Content Include="Index.aspx" />
     <Content Include="login\login.aspx" />
-    <Content Include="Matricula\matricula.aspx" />
+    <Content Include="Cursos\matricula.aspx" />
     <Content Include="Perfil\Perfil.aspx" />
     <Content Include="Plan_estudio\Plan_estudio.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -400,6 +400,8 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cursos\Controladora matricula.cs" />
+    <Compile Include="Cursos\controladoraBD matricula.cs" />
     <Compile Include="Cursos\ControladoraBD_curso.cs" />
     <Compile Include="Cursos\Controladora_cursos.cs" />
     <Compile Include="Cursos\Cursos.aspx.cs">
@@ -465,14 +467,11 @@
     <Compile Include="login\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Matricula\ControladoraBD_matricula.cs" />
-    <Compile Include="Matricula\Controladora_matricula.cs" />
-    <Compile Include="Matricula\Entidad_matricula.cs" />
-    <Compile Include="Matricula\matricula.aspx.cs">
+    <Compile Include="Cursos\matricula.aspx.cs">
       <DependentUpon>matricula.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Matricula\matricula.aspx.designer.cs">
+    <Compile Include="Cursos\matricula.aspx.designer.cs">
       <DependentUpon>matricula.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />

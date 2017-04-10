@@ -25,7 +25,7 @@ namespace WebApplication1.login
 
         }
 
-        protected void iniciar_Click(object sender, EventArgs e)
+        public void iniciar_Click(object sender, EventArgs e)
        {
             DataTable dt = new DataTable();
             string user;
@@ -44,7 +44,7 @@ namespace WebApplication1.login
                 if (dt.Rows.Count > 0)
                 {
                     alerta.Text = "bienvenido";
-                    Response.Redirect("~/Default.aspx");
+                    Response.Redirect("~/Perfil/Perfil.aspx");
                    Session["user"] = user;
                 }
                 else

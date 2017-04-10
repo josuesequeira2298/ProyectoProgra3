@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -9,15 +10,13 @@ namespace WebApplication1.Cursos
     {
         ControladoraBD_curso controladora = new ControladoraBD_curso();
 
-        internal void agregarCurso(object[] atri)
+       
+        internal DataTable buscarcurso(object[] atri)
         {
+            DataTable dt = new DataTable();
             Entidad_Curso curso = new Entidad_Curso(atri);
-            controladora.agregarCurso(curso);
-        }
-        internal void buscarcurso(object[] atri)
-        {
-            Entidad_Curso curso = new Entidad_Curso(atri);
-            controladora.buscarCurso(curso);
+           dt= controladora.buscarCurso(curso);
+            return dt;
 
         }
     }

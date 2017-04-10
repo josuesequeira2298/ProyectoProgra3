@@ -9,7 +9,9 @@ namespace WebApplication1.Matricula
 {
     public partial class matricula : System.Web.UI.Page
     {
-        Controladora_matricula controladora = new Controladora_matricula();
+
+        controladoraBD_matricula controladora = new controladoraBD_matricula();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -28,10 +30,24 @@ namespace WebApplication1.Matricula
 
         protected void cmbcarrera_SelectedIndexChanged(object sender, EventArgs e)
         {
-cmbcurso.DataSource = controladora.insertarDatos();
-                ddlCustomers.DataTextField = "Name";
-                ddlCustomers.DataValueField = "CustomerId";
-                ddlCustomers.DataBind();
+            
+            cmbcarrera.DataSource=
+        }
+
+        protected void cmbcurso_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbcurso.DataSource=
+
+            /* ddlCustomers.DataSource = cmd.ExecuteReader();
+            ddlCustomers.DataTextField = "Name";
+            ddlCustomers.DataValueField = "CustomerId";
+            ddlCustomers.DataBind();
+            */
+        }
+
+        protected void cmbgrupo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

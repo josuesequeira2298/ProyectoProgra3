@@ -27,12 +27,19 @@
         appInsights.trackPageView();
     </script>
     <script lang="JavaScript">
-        var session;
-        if (Session["user"] == "") {
+        var Session;
+        try {
+            if (Session["user"] == "") {
+                
+            } else {
+                label_numCarnet = "carnet" + Session["user"].tostring();
+            }
 
-        } else {
-            label_numCarnet = "carnet" + session["user"].tostring();
+        } catch (e) {
+            label_numCarnet = "no funcionó";
+
         }
+
 
     </script>
 </head>
@@ -76,13 +83,14 @@
                         <li><a runat="server" href="Matricula/matricula.aspx">Matricula</a></li>
 
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <asp:LoginView runat="server" ViewStateMode="Enabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="Estudiante/Estudiante.aspx">Registrarse</a></li>
                                 <li><a runat="server" href="login/login.aspx">Log in</a></li>
-                                <li>
-                                    <label id="label_numCarnet"></label></li>
+                                <li><label id="label_numCarnet"></label></li>
+                                
+                                   
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
