@@ -19,12 +19,12 @@ namespace WebApplication1.Estudiante
             controladoraBD.agregarEstudiante(estudiante);
             
         }
-        internal DataTable buscarEstudiante(object[] atri)
+        internal DataTable buscarEstudiante(string carnet)
         {
             DataTable dt = new DataTable();
-            Entidad_estudiante estudiante = new Entidad_estudiante(atri);
+            
 
-            dt=controladoraBD.buscarEstudiante(estudiante);
+            dt=controladoraBD.buscarEstudiante(carnet);
             return dt;
         }
     }

@@ -45,10 +45,10 @@ namespace WebApplication1.Estudiante
 
         }
 
-        internal DataTable buscarEstudiante(Entidad_estudiante estudiante)
+        internal DataTable buscarEstudiante(string carnet)
         {
             DataTable dt = new DataTable();
-            string consulta = "select * from estudiante where carnet = ";
+            string consulta = "select * from estudiante where carnet = "+carnet;
 
             dt=adaptador.consultar(consulta);
             return dt;

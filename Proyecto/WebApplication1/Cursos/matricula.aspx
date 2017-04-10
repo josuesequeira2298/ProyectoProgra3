@@ -3,19 +3,19 @@
     <br />
     <asp:Label ID="Label1" runat="server" Font-Size="13pt" Text="Carrera:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbcarrera" runat="server" OnSelectedIndexChanged="cmbcarrera_SelectedIndexChanged">
+<asp:DropDownList ID="cmbcarrera" runat="server" OnSelectedIndexChanged="cmbcarrera_SelectedIndexChanged" Width="154px">
 </asp:DropDownList>
 <br />
 <br />
     <asp:Label ID="Label2" runat="server" Font-Size="13pt" Text="Cursos:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbcurso" runat="server" OnSelectedIndexChanged="cmbcurso_SelectedIndexChanged">
+<asp:DropDownList ID="cmbcurso" runat="server" OnSelectedIndexChanged="cmbcurso_SelectedIndexChanged" Width="158px">
 </asp:DropDownList>
 &nbsp;<br />
 <br />
     <asp:Label ID="Label3" runat="server" Font-Size="13pt" Text="Grupo:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbgrupo" runat="server" OnSelectedIndexChanged="cmbgrupo_SelectedIndexChanged">
+<asp:DropDownList ID="cmbgrupo" runat="server" OnSelectedIndexChanged="cmbgrupo_SelectedIndexChanged" Width="154px">
 </asp:DropDownList>
 <br />
 <br />

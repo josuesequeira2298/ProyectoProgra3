@@ -45,7 +45,7 @@ namespace WebApplication1.login
                 {
                     alerta.Text = "bienvenido";
                     Response.Redirect("~/Perfil/Perfil.aspx");
-                   Session["user"] = user;
+                     Session["user"] = user;
                 }
                 else
                 {

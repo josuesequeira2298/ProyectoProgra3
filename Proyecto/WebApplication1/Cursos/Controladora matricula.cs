@@ -14,21 +14,21 @@ namespace WebApplication1.Matricula
         {
             DataTable dt = new DataTable();
 
-            controladora.buscarcurso(carrera);
+            dt=controladora.buscarcurso();
             return dt;
         }
 
         internal DataTable buscarcarrera()
         {
             DataTable dt = new DataTable();
-            controladora.buscarcarrera();
+           dt= controladora.buscarcarrera();
             return dt;
         }
 
         internal DataTable buscargrupo(string curso)
         {
             DataTable dt = new DataTable();
-            controladora.buscargrupo(curso);
+           dt= controladora.buscargrupo(curso);
             
             return dt;
         }

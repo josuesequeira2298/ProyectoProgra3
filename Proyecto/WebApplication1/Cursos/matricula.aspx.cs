@@ -14,7 +14,16 @@ namespace WebApplication1.Matricula
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+                cmbcurso.DataSource = controladora.buscarcurso();
+                cmbcurso.DataValueField = "Nombre";
+                cmbcurso.DataTextField = "Nombre";
+                cmbcurso.DataBind();
+            
+            cmbcarrera.DataSource = controladora.buscarcarrera();
+            cmbcarrera.DataValueField = "Nombre";
+            cmbcarrera.DataTextField = "Nombre";
+            cmbcarrera.DataBind();
         }
 
         protected void btnmatricular_Click(object sender, EventArgs e)
@@ -25,24 +34,30 @@ namespace WebApplication1.Matricula
             objeto[1] = cmbcurso.Text;
             objeto[2] = cmbgrupo.Text;
 
-            controladora.insertarDatos(objeto);
+           // controladora.insertarDatos(objeto);
         }
 
         protected void cmbcarrera_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            cmbcarrera.DataSource=
+
+          /*  cmbcarrera.DataSource = controladora.buscarcarrera();
+            cmbcarrera.DataValueField = "Nombre";
+            cmbcarrera.DataTextField = "Nombre";
+            cmbcarrera.DataBind();
+            */
+
+
+
         }
 
         protected void cmbcurso_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbcurso.DataSource=
+            cmbcurso.DataSource = controladora.buscarcurso();
+            cmbcurso.DataValueField = "Nombre";
+            cmbcurso.DataTextField = "Nombre";
+            cmbcurso.DataBind();
 
-            /* ddlCustomers.DataSource = cmd.ExecuteReader();
-            ddlCustomers.DataTextField = "Name";
-            ddlCustomers.DataValueField = "CustomerId";
-            ddlCustomers.DataBind();
-            */
+
         }
 
         protected void cmbgrupo_SelectedIndexChanged(object sender, EventArgs e)
