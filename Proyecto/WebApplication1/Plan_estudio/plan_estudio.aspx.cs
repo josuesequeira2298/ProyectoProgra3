@@ -16,7 +16,14 @@ namespace WebApplication1.Plan_estudio
         Estudiante.ControladoraBD_estudiante contro = new Estudiante.ControladoraBD_estudiante();
         protected void Page_Load(object sender, EventArgs e)
         {
-            string user = "43519"; //Session["user"].ToString();
+
+            if (Session["user"] == null)
+            {
+                Response.Redirect("~/Index.aspx");
+            }
+
+
+            string user =Session["user"].ToString();
 
 
             cboCarrera.DataSource = (contro.buscarCarreras("43519"));
@@ -35,7 +42,7 @@ namespace WebApplication1.Plan_estudio
 
         protected void btnCargar_Click(object sender, EventArgs e)
         {
-            string user = "43519"; // Session["user"].ToString();
+            string user = Session["user"].ToString();
            
 
             dgvplan.DataSource = dt;

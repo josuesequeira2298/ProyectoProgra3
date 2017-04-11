@@ -11,7 +11,10 @@ namespace WebApplication1.Cursos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"] == null)
+            {
+                Response.Redirect("~/Index.aspx");
+            }
         }
     }
 }

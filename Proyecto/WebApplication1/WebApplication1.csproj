@@ -205,7 +205,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Cursos\Cursos.aspx" />
     <Content Include="Cursos\Expediente.aspx" />
-    <Content Include="Cursos\verCursos.aspx" />
     <Content Include="Estudiante\Estudiante.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -421,13 +420,6 @@
     </Compile>
     <Compile Include="Cursos\Expediente.aspx.designer.cs">
       <DependentUpon>Expediente.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cursos\verCursos.aspx.cs">
-      <DependentUpon>verCursos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cursos\verCursos.aspx.designer.cs">
-      <DependentUpon>verCursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Direcciones\ControladoraBD_direcciones.cs" />
     <Compile Include="Default.aspx.cs">
