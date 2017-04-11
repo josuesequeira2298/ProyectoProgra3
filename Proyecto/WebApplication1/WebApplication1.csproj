@@ -222,6 +222,8 @@
     <Content Include="images\Ing Inf.JPG" />
     <Content Include="images\Ing Sis.JPG" />
     <Content Include="images\Ing Sof.JPG" />
+    <Content Include="images\Universidad de las antillas 50px.PNG" />
+    <Content Include="images\Universidad de las antillas.png" />
     <Content Include="Index.aspx" />
     <Content Include="login\login.aspx" />
     <Content Include="Cursos\matricula.aspx" />

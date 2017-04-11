@@ -401,9 +401,11 @@ hr {
 }
 
 p {
-  margin: 0 0 10px;
-    width: 1176px;
+  width: 1176px;
     height: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
 }
 
 .lead {
