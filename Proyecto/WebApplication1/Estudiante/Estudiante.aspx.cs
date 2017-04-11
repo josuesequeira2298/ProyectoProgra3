@@ -27,7 +27,7 @@ namespace WebApplication1.Estudiante
             if (!IsPostBack)
             {
                 dt = controladora.buscarEstudiante(user);
-
+                
                 lbcarnet.Text = dt.Rows[0][0].ToString();
                 lbnombre.Text = dt.Rows[0][6].ToString() + " " + dt.Rows[0][7].ToString() + " " + dt.Rows[0][8].ToString();
                 dt1 = controladora.buscarProvincia();
@@ -35,6 +35,9 @@ namespace WebApplication1.Estudiante
                 cboProvincia.DataValueField = "Provincia";
                 cboProvincia.DataTextField= "Provincia";
                 cboProvincia.DataBind();
+                
+
+
             }
 
 
@@ -61,10 +64,11 @@ namespace WebApplication1.Estudiante
 
         protected void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dt2 = controladora.buscarCanton(cboProvincia.SelectedItem.Text);
+            dt2 = controladora.buscarCanton(cboProvincia.Text);
             cboCanton.DataSource = dt2;
             cboCanton.DataValueField = "Canton";
             cboCanton.DataTextField = "Canton";
+            cboCanton.DataBind();
         }
         
     }

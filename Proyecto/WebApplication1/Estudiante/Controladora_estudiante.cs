@@ -49,16 +49,16 @@ namespace WebApplication1.Estudiante
         internal DataTable buscarProvincia()
         {
             DataTable dt = new DataTable();
-
+            
             dt = controladoraBD.buscarProvincia();
             return dt;
         }
 
-        internal DataTable buscarCanton(string provincia)
+        internal DataTable buscarCanton(String Provincia )
         {
             DataTable dt = new DataTable();
 
-            dt = controladoraBD.buscarCanton(provincia);
+            dt = controladoraBD.buscarCanton(Provincia);
             return dt;
         }
 
