@@ -478,6 +478,8 @@
       <DependentUpon>matricula.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Perfil\Controladora Horario.cs" />
+    <Compile Include="Perfil\ControladoraBD horario.cs" />
     <Compile Include="Perfil\horario.aspx.cs">
       <DependentUpon>horario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
