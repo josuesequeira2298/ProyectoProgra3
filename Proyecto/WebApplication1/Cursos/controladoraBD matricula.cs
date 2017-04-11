@@ -9,29 +9,50 @@ namespace WebApplication1.Matricula
     public class controladoraBD_matricula
     {
         Adaptador adaptador = new Adaptador();
-        internal DataTable buscarcurso()
+
+
+        internal DataTable buscarMatricula(string carrera, string user)
         {
             DataTable dt = new DataTable();
-            string consulta = "select Nombre from Curso";
-            dt=adaptador.consultar(consulta);
+            string consulta = "select distinct a.id_curso as Codigo, cu.nombre as Curso, gr.turno as Turno, gr.descrip as Grupo" +
+"from" +
+    "(select cpc.id_curso, cu.nombre " +
+
+        "from carrera_por_curso cpc " +
+
+       " join carrera ca " +
+
+        "on ca.id_carrera = cpc.ID_carrera " +
+
+        "where ca.nombre = '"+carrera+"' " +
+
+        "and id_curso not in " +
+
+            "(select id_curso " +
+
+               "from expediente ex " +
+
+                "where carnet = "+ user  +
+
+                " and ex.estado IN('Aprobado', 'Matriculado')))a " +
+      "inner join requisito r " +
+   " on   r.id_curso = a.id_curso " +
+      " join curso cu on "+
+       " cu.id_curso = a.id_curso "+
+       "join  grupo gr "+
+        "on gr.id_curso = a.id_curso "+
+"where(r.id_requisito = 'N/A' " +
+"or r.id_requisito in " +
+
+        "(select id_curso " +
+
+          "from expediente " +
+
+           " where carnet = "+ user +" and estado = 'Aprobado'))";
+            dt =adaptador.consultar(consulta);
             return dt;
         }
 
-        internal DataTable buscarcarrera()
-        {
-            DataTable dt = new DataTable();
-            string consulta = "select * from Carrera";
-           dt= adaptador.consultar(consulta);
-            return dt;
-        }
-
-        internal DataTable buscargrupo(string curso)
-        {
-            
-            DataTable dt = new DataTable();
-            string consulta = "select grupo from Grupo where id_curso = '"+curso+"'";
-           dt= adaptador.consultar(consulta);
-            return dt;
-        }
+       
     }
 }

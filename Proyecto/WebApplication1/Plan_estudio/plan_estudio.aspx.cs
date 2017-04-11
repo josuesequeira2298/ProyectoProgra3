@@ -16,13 +16,18 @@ namespace WebApplication1.Plan_estudio
         Estudiante.ControladoraBD_estudiante contro = new Estudiante.ControladoraBD_estudiante();
         protected void Page_Load(object sender, EventArgs e)
         {
-            //string user = Session["user"].ToString();
+            string user = "43519"; //Session["user"].ToString();
 
 
             cboCarrera.DataSource = (contro.buscarCarreras("43519"));
             cboCarrera.DataValueField = "Carreras";
             cboCarrera.DataTextField = "Carreras";
             cboCarrera.DataBind();
+            if (!IsPostBack)
+            {
+ dt = controladora.Aprovados(cboCarrera.SelectedItem.Text, user);
+            dt2 = controladora.noAprovados(cboCarrera.SelectedItem.Text, user);
+            }
         }
 
 
@@ -31,8 +36,7 @@ namespace WebApplication1.Plan_estudio
         protected void btnCargar_Click(object sender, EventArgs e)
         {
             string user = "43519"; // Session["user"].ToString();
-            dt = controladora.Aprovados(cboCarrera.SelectedItem.Text, user);
-            dt2 = controladora.noAprovados(cboCarrera.SelectedItem.Text, user);
+           
 
             dgvplan.DataSource = dt;
             dgvplan.DataBind();
