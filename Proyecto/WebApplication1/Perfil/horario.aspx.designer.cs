@@ -10,6 +10,6 @@
 namespace WebApplication1.Perfil {
     
     
-    public partial class Horarios {
+    public partial class horario {
     }
 }

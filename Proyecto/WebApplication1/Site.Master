@@ -71,7 +71,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="Index.aspx">
+                    <a class="navbar-brand" runat="server" href="~/Index.aspx">
                         <img src="images/Universidad%20de%20las%20antillas%2050px.PNG" width="125" height="36" />
                     </a>
                 </div>
@@ -81,7 +81,7 @@
                         <li><a runat="server" href="~/Cursos/matricula.aspx">Matricula</a></li>
                         <li><a runat="server" href="Plan_estudio/Plan_estudio.aspx">Plan de Estudio</a></li>
                         <li><a runat="server" href="Cursos/Expediente.aspx">Expediente</a></li>
-                        <li><a runat="server" href="Perfil/Horarios.aspx">Horario</a></li>
+                        <li><a runat="server" href="Perfil/horario.aspx">Perfil/horario.aspx</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
 
                     </ul>
