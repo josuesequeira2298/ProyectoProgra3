@@ -14,9 +14,9 @@ namespace WebApplication1.Matricula
         internal DataTable buscarMatricula(string carrera, string user)
         {
             DataTable dt = new DataTable();
-            string consulta = "select distinct a.id_curso as Codigo, cu.nombre as Curso, gr.turno as Turno, gr.descrip as Grupo" +
+            string consulta = "select distinct a.id_curso as Codigo, cu.nombre as Curso, gr.turno as Turno, gr.descrip as Grupo " +
 "from" +
-    "(select cpc.id_curso, cu.nombre " +
+    "(select cpc.id_curso " +
 
         "from carrera_por_curso cpc " +
 

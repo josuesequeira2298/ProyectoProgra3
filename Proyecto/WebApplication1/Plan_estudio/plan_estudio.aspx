@@ -4,6 +4,10 @@
     
 
     <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
         Seleccion de Carrera:&nbsp;
         <asp:DropDownList ID="cboCarrera" runat="server" Width="158px" OnSelectedIndexChanged="cboCarrera_SelectedIndexChanged">
         </asp:DropDownList>
@@ -12,7 +16,7 @@
     </p>
 <br />
 <br />
-    Aprovados:<br />
+    Aprobados:<br />
     <br />
         <asp:GridView ID="dgvplan" runat="server" Height="263px" Width="721px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />

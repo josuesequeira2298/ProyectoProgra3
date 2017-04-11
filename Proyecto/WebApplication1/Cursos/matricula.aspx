@@ -6,6 +6,8 @@
 <asp:DropDownList ID="cmbcarrera" runat="server" OnSelectedIndexChanged="cmbcarrera_SelectedIndexChanged" Width="154px">
 </asp:DropDownList>
 <br />
+    <asp:GridView ID="dgvMatri" runat="server">
+    </asp:GridView>
 <br />
     <asp:Label ID="Label2" runat="server" Font-Size="13pt" Text="Cursos:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

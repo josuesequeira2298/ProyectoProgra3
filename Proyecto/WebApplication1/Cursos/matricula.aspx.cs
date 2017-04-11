@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,21 +10,19 @@ namespace WebApplication1.Matricula
 {
     public partial class matricula : System.Web.UI.Page
     {
-
+        DataTable dt = new DataTable();
         controladoraBD_matricula controladora = new controladoraBD_matricula();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-                cmbcurso.DataSource = controladora.buscarcurso();
-                cmbcurso.DataValueField = "Nombre";
-                cmbcurso.DataTextField = "Nombre";
-                cmbcurso.DataBind();
-            
-            cmbcarrera.DataSource = controladora.buscarcarrera();
-            cmbcarrera.DataValueField = "Nombre";
-            cmbcarrera.DataTextField = "Nombre";
-            cmbcarrera.DataBind();
+
+            string user = "43529";
+            dt=controladora.buscarMatricula("Ing Informatica", user);
+
+
+            dgvMatri.DataSource = dt;
+            dgvMatri.DataBind();
+
         }
 
         protected void btnmatricular_Click(object sender, EventArgs e)
@@ -52,11 +51,7 @@ namespace WebApplication1.Matricula
 
         protected void cmbcurso_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbcurso.DataSource = controladora.buscarcurso();
-            cmbcurso.DataValueField = "Nombre";
-            cmbcurso.DataTextField = "Nombre";
-            cmbcurso.DataBind();
-
+          
 
         }
 

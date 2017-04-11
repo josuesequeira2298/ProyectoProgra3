@@ -23,7 +23,7 @@ namespace WebApplication1.Plan_estudio
             cboCarrera.DataValueField = "Carreras";
             cboCarrera.DataTextField = "Carreras";
             cboCarrera.DataBind();
-            if (!IsPostBack)
+            if (IsPostBack)
             {
  dt = controladora.Aprovados(cboCarrera.SelectedItem.Text, user);
             dt2 = controladora.noAprovados(cboCarrera.SelectedItem.Text, user);
