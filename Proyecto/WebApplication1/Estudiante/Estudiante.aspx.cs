@@ -36,12 +36,12 @@ namespace WebApplication1.Estudiante
                 cboProvincia.DataValueField = "Provincia";
                 cboProvincia.DataTextField= "Provincia";
                 cboProvincia.DataBind();
-
+                dt2 = controladora.buscarCanton();
                 cboCanton.DataSource = dt2;
                 cboCanton.DataValueField = "Canton";
                 cboCanton.DataTextField = "Canton";
                 cboCanton.DataBind();
-
+                dt3 = controladora.buscarDistrito();
                 cboDistrito.DataSource = dt3;
                 cboDistrito.DataValueField ="Distrito";
                 cboDistrito.DataTextField ="Distrito" ;
@@ -115,16 +115,12 @@ namespace WebApplication1.Estudiante
             objeto[9]=pass;
 
             controladora.insertarDatos(objeto);
-
+            Response.Redirect("~/Index.aspx");
         }
 
         protected void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dt2 = controladora.buscarCanton(cboProvincia.Text);
-            cboCanton.DataSource = dt2;
-            cboCanton.DataValueField = "Canton";
-            cboCanton.DataTextField = "Canton";
-            cboCanton.DataBind();
+     
         }
         
     }

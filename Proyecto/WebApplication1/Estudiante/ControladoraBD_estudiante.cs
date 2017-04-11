@@ -83,7 +83,7 @@ namespace WebApplication1.Estudiante
             return dt;
         }
 
-        internal DataTable buscarCanton(string Provincia)
+        internal DataTable buscarCanton()
         {
             DataTable dt = new DataTable();
             string consulta = "select Canton  from Canton where provincia = 'San Jose'";
@@ -91,7 +91,7 @@ namespace WebApplication1.Estudiante
             return dt;
         }
 
-        internal DataTable buscarDistrito(string canton)
+        internal DataTable buscarDistrito()
         {
             DataTable dt = new DataTable();
             string consulta = "select Distrito  from Distrito where Canton = '"+canton+"'";

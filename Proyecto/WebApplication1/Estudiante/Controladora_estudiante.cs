@@ -54,19 +54,19 @@ namespace WebApplication1.Estudiante
             return dt;
         }
 
-        internal DataTable buscarCanton(String Provincia )
+        internal DataTable buscarCanton( )
         {
             DataTable dt = new DataTable();
 
-            dt = controladoraBD.buscarCanton(Provincia);
+            dt = controladoraBD.buscarCanton();
             return dt;
         }
 
-        internal DataTable buscarDistrito(String canton)
+        internal DataTable buscarDistrito()
         {
             DataTable dt = new DataTable();
 
-            dt = controladoraBD.buscarDistrito(canton);
+            dt = controladoraBD.buscarDistrito();
             return dt;
         }
     }
