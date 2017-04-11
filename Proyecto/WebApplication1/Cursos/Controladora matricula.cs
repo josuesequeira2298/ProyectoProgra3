@@ -14,8 +14,13 @@ namespace WebApplication1.Matricula
         {
             DataTable dt = new DataTable();
 
-            dt=controladora.buscarMatricula(carrera,user);
+            dt=controladora.buscarMatricula(user);
             return dt;
+        }
+
+        internal void insertarMatricula(string curso,string user,string date)
+        {
+            controladora.insertarmatricula(curso, user,date);
         }
 
         

@@ -16,48 +16,27 @@ namespace WebApplication1.Matricula
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            string user = "43529";
-            dt=controladora.buscarMatricula("Ing Informatica", user);
+            string user = Session["user"].ToString();
+            dt=controladora.buscarMatricula( user);
 
 
             dgvMatri.DataSource = dt;
             dgvMatri.DataBind();
 
+            cbocurso.DataSource = dt;
+            cbocurso.DataValueField = "Codigo";
+            cbocurso.DataTextField = "Codigo";
+            cbocurso.DataBind();
+
         }
+
 
         protected void btnmatricular_Click(object sender, EventArgs e)
         {
-            Object[] objeto = new Object[8];
-
-            objeto[0] = cmbcarrera.Text;
-            objeto[1] = cmbcurso.Text;
-            objeto[2] = cmbgrupo.Text;
-
-           // controladora.insertarDatos(objeto);
-        }
-
-        protected void cmbcarrera_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-          /*  cmbcarrera.DataSource = controladora.buscarcarrera();
-            cmbcarrera.DataValueField = "Nombre";
-            cmbcarrera.DataTextField = "Nombre";
-            cmbcarrera.DataBind();
-            */
-
-
-
-        }
-
-        protected void cmbcurso_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-
-        }
-
-        protected void cmbgrupo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            string date = System.DateTime.Now.ToString("yyyy.MM.dd");
+            string user = Session["user"].ToString();
+            string curso = cbocurso.SelectedItem.Text;
+            controladora.insertarmatricula(curso,user,date);
         }
     }
 }

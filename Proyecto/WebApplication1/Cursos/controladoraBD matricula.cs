@@ -11,7 +11,7 @@ namespace WebApplication1.Matricula
         Adaptador adaptador = new Adaptador();
 
 
-        internal DataTable buscarMatricula(string carrera, string user)
+        internal DataTable buscarMatricula( string user)
         {
             DataTable dt = new DataTable();
             string consulta = "select distinct a.id_curso as Codigo, cu.nombre as Curso, gr.turno as Turno, gr.descrip as Grupo " +
@@ -24,9 +24,7 @@ namespace WebApplication1.Matricula
 
         "on ca.id_carrera = cpc.ID_carrera " +
 
-        "where ca.nombre = '"+carrera+"' " +
-
-        "and id_curso not in " +
+        "where id_curso not in " +
 
             "(select id_curso " +
 
@@ -53,6 +51,11 @@ namespace WebApplication1.Matricula
             return dt;
         }
 
+        internal void insertarmatricula(string curso,string user,string date)
+        {
+            string consulta = "INSERT INTO [dbo].[Expediente] ([Estado],[Cuatrimestre_matri],[id_curso],[Carnet]) VALUES ('Matriculado' ,'"+date+"','"+curso+"',"+user+")";
+            adaptador.insertar(consulta);
+        }
        
     }
 }

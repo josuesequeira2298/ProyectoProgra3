@@ -1,24 +1,26 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="matricula.aspx.cs" Inherits="WebApplication1.Matricula.matricula" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <br />
-    <asp:Label ID="Label1" runat="server" Font-Size="13pt" Text="Carrera:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbcarrera" runat="server" OnSelectedIndexChanged="cmbcarrera_SelectedIndexChanged" Width="154px">
-</asp:DropDownList>
 <br />
-    <asp:GridView ID="dgvMatri" runat="server">
+    <asp:GridView ID="dgvMatri" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
     </asp:GridView>
 <br />
-    <asp:Label ID="Label2" runat="server" Font-Size="13pt" Text="Cursos:"></asp:Label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbcurso" runat="server" OnSelectedIndexChanged="cmbcurso_SelectedIndexChanged" Width="158px">
-</asp:DropDownList>
-&nbsp;<br />
+    <asp:Label ID="Label2" runat="server" Font-Size="13pt" Text="Curso a Matricular:"></asp:Label>
+    &nbsp;&nbsp;
+&nbsp;<asp:DropDownList ID="cbocurso" runat="server" Width="197px">
+    </asp:DropDownList>
+    <br />
 <br />
-    <asp:Label ID="Label3" runat="server" Font-Size="13pt" Text="Grupo:"></asp:Label>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:DropDownList ID="cmbgrupo" runat="server" OnSelectedIndexChanged="cmbgrupo_SelectedIndexChanged" Width="154px">
-</asp:DropDownList>
 <br />
 <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
