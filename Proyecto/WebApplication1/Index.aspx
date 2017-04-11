@@ -1,10 +1,15 @@
 ﻿    <%@ Page Title="Universidad de las Antillas" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="WebApplication1.Index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+     <script src="js/modernizr-2.0.6.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.mousewheel-3.0.6.min.js"></script>
+    <script src="js/jquery.rondell.min.js"></script>
+    <link href="css/jquery.rondell.css" rel="stylesheet" />
 
 
 
     <p class="MsoNormal">
-    &nbsp;</p>
+        &nbsp;</p>
 <p class="MsoNormal">
 
 
@@ -24,53 +29,36 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-    <p class="MsoNormal">
+   </p>
 
 
         &nbsp;<div class="jumbotron">
     Bienvenido a la Universidad de las Antillas, una de las más prestigiosas universidades en Costa Rica. <o:p></o:p>
     </div>
-<p class="MsoNormal">
-    <o:p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </o:p>
-    <img alt="" src="images/Adm%20Emp.JPG" style="width: 257px; height: 163px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img alt="" src="images/Ing%20Inf.JPG" style="width: 259px; height: 163px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img alt="" src="images/Electro.JPG" style="width: 257px; height: 162px" /></p>
-</p>
-<p class="MsoNormal">
+        
 
-    &nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img alt="" src="images/Ing%20Indu.JPG" style="width: 258px; height: 159px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img alt="" src="images/Ing%20Sis.JPG" style="width: 261px; height: 159px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img alt="" src="images/Ing%20Sof.JPG" style="width: 256px; height: 153px" /></p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p class="MsoNormal">
-    &nbsp;</p>
-<p>
-</p>
+    <div style="align-content:center; height: 64px;" height: 150px; width: 2000px;" id="rondellCarousel">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Repeater ID="Repeater1" runat="server">
+            <ItemTemplate>
+                <a href="<%# Container.DataItem %>">
+                    <img src="<%# Container.DataItem %>" />
+                </a>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+    
+    <script type="text/javascript">
+        $(function () {
+            $("#rondellCarousel").rondell({
+                preset: "carousel",
+            });
+        });
+    </script>
 
 
-
-</asp:Content>
+     <br />
+    </asp:Content>
 
 
 
