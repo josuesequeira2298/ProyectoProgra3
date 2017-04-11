@@ -5,15 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication1
+namespace WebApplication1.Perfil
 {
-    public partial class _Default : Page
+    public partial class horario : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            string user = Session["user"].ToString();
-        }
 
+        }
     }
 }

@@ -227,6 +227,7 @@
     <Content Include="Index.aspx" />
     <Content Include="login\login.aspx" />
     <Content Include="Cursos\matricula.aspx" />
+    <Content Include="Perfil\horario.aspx" />
     <Content Include="Perfil\Perfil.aspx" />
     <Content Include="Plan_estudio\Plan_estudio.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -477,6 +478,13 @@
       <DependentUpon>matricula.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Perfil\horario.aspx.cs">
+      <DependentUpon>horario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil\horario.aspx.designer.cs">
+      <DependentUpon>horario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Perfil\Perfil.aspx.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
