@@ -26,6 +26,7 @@
         window.appInsights = appInsights;
         appInsights.trackPageView();
     </script>
+
     <script lang="JavaScript">
 
         if (Session["user"] != null) {
