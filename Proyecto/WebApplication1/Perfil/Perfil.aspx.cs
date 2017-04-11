@@ -47,14 +47,19 @@ Estudiante.Controladora_estudiante controladora = new Estudiante.Controladora_es
             }
             else
             {
-               
-                lbcarnet.Text = "sesion es null";
+
+                Response.Redirect("~/Index.aspx");
             }
         }
 
         protected void dgvCarrera_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        protected void btnEdit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Estudiante/Estudiante");
         }
     }
 }

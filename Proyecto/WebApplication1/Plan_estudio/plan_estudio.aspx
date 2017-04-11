@@ -12,7 +12,7 @@
         <asp:DropDownList ID="cboCarrera" runat="server" Width="158px" OnSelectedIndexChanged="cboCarrera_SelectedIndexChanged">
         </asp:DropDownList>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnCargar" runat="server" OnClick="btnCargar_Click" Text="Cargar" />
+        <asp:Button ID="btnCargar" runat="server" OnClick="btnCargar_Click" Text="Cargar" Height="18px" Width="58px" />
     </p>
 <br />
 <br />

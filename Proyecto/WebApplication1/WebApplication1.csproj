@@ -402,7 +402,9 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cursos\Controladora expediente.cs" />
     <Compile Include="Cursos\Controladora matricula.cs" />
+    <Compile Include="Cursos\ControladoraBD expediente.cs" />
     <Compile Include="Cursos\controladoraBD matricula.cs" />
     <Compile Include="Cursos\ControladoraBD_curso.cs" />
     <Compile Include="Cursos\Controladora_cursos.cs" />

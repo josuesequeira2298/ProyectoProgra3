@@ -11,8 +11,11 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            string user = Session["user"].ToString();
+            if (Session["user"] == null)
+            {
+                Response.Redirect("~/Index.aspx");
+            }
+
         }
 
     }
