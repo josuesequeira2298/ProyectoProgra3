@@ -79,7 +79,7 @@
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Cursos/matricula.aspx">Matricula</a></li>
                         <li><a runat="server" href="Plan_estudio/Plan_estudio.aspx">Plan de Estudio</a></li>
-                        <li><a runat="server" href="~/Index.aspx" >Expediente</a></li>
+                        <li><a runat="server" href="Cursos/Expediente.aspx">Expediente</a></li>
                         <li><a runat="server" href="~/Index.aspx">Horario</a></li>
 
                     </ul>
