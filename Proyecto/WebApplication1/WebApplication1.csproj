@@ -203,6 +203,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\jquery.rondell.css" />
+    <Content Include="css\jquery.rondell.min.css" />
     <Content Include="Cursos\Cursos.aspx" />
     <Content Include="Cursos\Expediente.aspx" />
     <Content Include="Estudiante\Estudiante.aspx" />
@@ -215,15 +217,19 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="images\Adm Emp.JPG" />
-    <Content Include="images\Electro.JPG" />
-    <Content Include="images\Ing Indu.JPG" />
-    <Content Include="images\Ing Inf.JPG" />
-    <Content Include="images\Ing Sis.JPG" />
-    <Content Include="images\Ing Sof.JPG" />
+    <Content Include="ImagenesCarreras\Adm Emp.JPG" />
+    <Content Include="ImagenesCarreras\Electro.JPG" />
+    <Content Include="ImagenesCarreras\Ing Indu.JPG" />
+    <Content Include="ImagenesCarreras\Ing Inf.JPG" />
+    <Content Include="ImagenesCarreras\Ing Sis.JPG" />
+    <Content Include="ImagenesCarreras\Ing Sof.JPG" />
     <Content Include="images\Universidad de las antillas 50px.PNG" />
     <Content Include="images\Universidad de las antillas.png" />
     <Content Include="Index.aspx" />
+    <Content Include="Js\jquery-1.10.2.min.js" />
+    <Content Include="Js\jquery.mousewheel-3.0.6.min.js" />
+    <Content Include="Js\jquery.rondell.min.js" />
+    <Content Include="Js\modernizr-2.0.6.min.js" />
     <Content Include="login\login.aspx" />
     <Content Include="Cursos\matricula.aspx" />
     <Content Include="Perfil\horario.aspx" />
@@ -472,6 +478,8 @@
       <DependentUpon>matricula.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Perfil\Controladora Horario.cs" />
+    <Compile Include="Perfil\ControladoraBD horario.cs" />
     <Compile Include="Perfil\horario.aspx.cs">
       <DependentUpon>horario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
