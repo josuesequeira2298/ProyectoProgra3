@@ -27,15 +27,15 @@
         appInsights.trackPageView();
     </script>
     <script lang="JavaScript">
-      
+
         if (Session["user"] != null) {
             $("ul").hide();
         }
-            
 
-      
 
-        
+
+
+
 
 
     </script>
@@ -71,7 +71,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="Index.aspx">Universidad de las Antillas</a>
+                    <a class="navbar-brand" runat="server" href="Index.aspx"> <img src="images/Universidad%20de%20las%20antillas%2050px.PNG" width="125" height="36" /> </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -80,15 +80,17 @@
                         <li><a runat="server" href="~/Cursos/matricula.aspx">Matricula</a></li>
 
                     </ul>
-                    <asp:LoginView  runat="server" ViewStateMode="Enabled">
+                    <asp:LoginView runat="server" ViewStateMode="Enabled">
                         <AnonymousTemplate>
-                      
-                            <ul ID="logg" class="nav navbar-nav navbar-right">
+
+                            <ul id="logg" class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="Estudiante/Estudiante.aspx">Registrarse</a></li>
                                 <li><a runat="server" href="login/login.aspx">Log in</a></li>
-                                <li><label id="label_numCarnet"></label></li>
-                                
-                                   
+                                <li>
+                                    <label id="label_numCarnet"></label>
+                                </li>
+
+
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
