@@ -13,7 +13,7 @@ namespace WebApplication1.Estudiante
         Adaptador adaptador = new Adaptador();
         internal void agregarEstudiante(Entidad_estudiante estudiante)
         {
-            string consulta = "INSERT INTO [dbo].[Estudiante]([Carnet],[cedula],[genero],[telefono],[email],[Activo],[Nombre],[Apellido1],[Apellido2],[contraseña])VALUES(@carnet,@cedula, @genero, @telefono, @email, @activo, @nombre, @apellido1, @apellido2, @pass)";
+            string consulta = "UPDATE [dbo].[Estudiante] SET [Carnet] = @carnet ,[cedula] = @cedula ,[genero] = @genero ,[telefono] = @telefono ,[email] = @email ,[Activo] = @activo ,[Nombre] = @nombre ,[Apellido1] = @apellido ,[Apellido2] = @apellido1 ,[contraseña] = @pass WHERE carnet=@carnet";
             SqlCommand comando = new SqlCommand(consulta);
             SqlParameter cedula = new SqlParameter("@cedula", System.Data.SqlDbType.Int);
             cedula.Value = estudiante.Cedula;

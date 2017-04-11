@@ -15,6 +15,7 @@ namespace WebApplication1.Estudiante
         DataTable dt2 = new DataTable();
         DataTable dt3 = new DataTable();
         Controladora_estudiante controladora = new Controladora_estudiante();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["user"] == null)
@@ -35,9 +36,15 @@ namespace WebApplication1.Estudiante
                 cboProvincia.DataValueField = "Provincia";
                 cboProvincia.DataTextField= "Provincia";
                 cboProvincia.DataBind();
-                
 
+                cboCanton.DataSource = dt2;
+                cboCanton.DataValueField = "Canton";
+                cboCanton.DataTextField = "Canton";
+                cboCanton.DataBind();
 
+                cboDistrito.DataSource = dt3;
+                cboDistrito.DataValueField ="Distrito";
+                cboDistrito.DataTextField ="Distrito" ;
             }
 
 
@@ -57,23 +64,26 @@ namespace WebApplication1.Estudiante
 
         protected void datosEstudiante(object sender, EventArgs e)
         {
+
             string pass;
             string correo;
             string tel;
              
 
-            if (txtcontraseña.Text=="")
+            if (txtContraseña.Text=="")
+             
             {
                 pass= dt.Rows[0][9].ToString();
+                
             }
             else
             {
-                pass = txtcontraseña.Text;
+                pass = txtContraseña.Text;
             }
 
             if (TxtCorreo.Text == "")
             {
-                correo = dt.Rows[0][3].ToString();
+                correo = dt.Rows[0][4].ToString();
             }
             else
             {
@@ -90,7 +100,21 @@ namespace WebApplication1.Estudiante
             }
 
             string user = Session["user"].ToString();
+            object[] objeto = new object[10];
+            Entidad_estudiante estudiante = new Entidad_estudiante(objeto);
 
+            objeto[0]= dt.Rows[0][0].ToString(); 
+            objeto[1]= dt.Rows[0][1].ToString(); 
+            objeto[2]= dt.Rows[0][2].ToString();
+            objeto[3] = tel;
+            objeto[4] = correo;
+            objeto[5]="1";
+            objeto[6]= dt.Rows[0][6].ToString();
+            objeto[7]= dt.Rows[0][7].ToString();
+            objeto[8]= dt.Rows[0][8].ToString();
+            objeto[9]=pass;
+
+            controladora.insertarDatos(objeto);
 
         }
 
