@@ -45,6 +45,7 @@ namespace WebApplication1.Estudiante
                 cboDistrito.DataSource = dt3;
                 cboDistrito.DataValueField ="Distrito";
                 cboDistrito.DataTextField ="Distrito" ;
+                cboDistrito.DataBind();
             }
 
 
@@ -112,10 +113,10 @@ namespace WebApplication1.Estudiante
             objeto[6]= dt.Rows[0][6].ToString();
             objeto[7]= dt.Rows[0][7].ToString();
             objeto[8]= dt.Rows[0][8].ToString();
-            objeto[9]=pass;
+            objeto[9] = pass;
 
             controladora.insertarDatos(objeto);
-            Response.Redirect("~/Index.aspx");
+            Response.Redirect("~/Perfil.aspx");
         }
 
         protected void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
